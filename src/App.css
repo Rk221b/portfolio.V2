@@ -1,38 +1,63 @@
-.App {
+html,
+body {
+  font-family: Helvetica;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: 'Catamaran', sans-serif;
+  letter-spacing: 0.3px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.left-container,
+.right-container {
+  width: 50%;
+  height: 100%;
+  vertical-align: top;
+}
+
+.outer-left,
+.right-inner {
+  padding: 50px;
+}
+
+.left-container{
+  background: #CDA34F;
   text-align: center;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left:0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.right-container{
+  background: #fff;
+  float: right;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.square{
+  width: 90%;
+  height: 25%;
+  background-color: #fff;
+  margin: auto;
+  position: relative;
+  top: 25%;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.info{
+  text-align: right;
+  position: relative;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.img {
+  background: url('./Asset/circle-cropped.png') center center no-repeat;
+  width: auto;
+  height: auto;
+  position: relative;
 }
